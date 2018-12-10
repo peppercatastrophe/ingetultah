@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorGray"
+    tools:context=".FragmentProfile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/bgProfil"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/background"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/defaultd"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="120dp"
+                android:id="@+id/photoprofile">
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <LinearLayout
+                android:id="@+id/cardgame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/photoprofile">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="30dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="20dp">
+
+                        <EditText
+                            android:id="@+id/tname"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="name"
+                            android:importantForAccessibility="yes" />
+
+                        <EditText
+                            android:id="@+id/tbirthday"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="birthday"
+                            android:clickable="true"
+                            android:editable="false"
+                            />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="phone"
+                            android:id="@+id/tphone"
+                            android:inputType="number"
+                            />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            android:id="@+id/btTambah"
+                            android:text="Add Profile"
+                            />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

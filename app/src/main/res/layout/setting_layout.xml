@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tulisanSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="40dp"
+        android:gravity="center"/>
+
+
+    <!--<ToggleButton-->
+        <!--android:id="@+id/toggleDark"-->
+        <!--android:gravity="right"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Dark mode"-->
+        <!--android:textSize="20dp"/>-->
+
+    <Button
+        android:id="@+id/tombolUbahWarnaGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Gray!"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/tombolUbahWarnaPink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pink!"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp" />
+
+
+</LinearLayout>
